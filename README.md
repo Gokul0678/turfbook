@@ -8,21 +8,26 @@ Players browse turfs, see live slot availability and book hourly slots. When som
 
 ## Screenshots
 
+### Login
+![Login page](docs/login.png)
+
 ### Browse turfs
 ![Home page with turf cards](docs/home.png)
 
 ### Live slot grid
-Slots are colour-coded: available, selected, your booking, booked and unavailable. The summary bar shows the total before you confirm.
+Slots are colour-coded: available, selected, your booking, booked and unavailable. Each slot shows the full hour it covers, and the summary bar shows the total before you confirm.
 
-![Slot grid with a selection and summary bar](docs/slots.png)
+![Slot grid showing a player's own bookings in blue](docs/slots.png)
 
-### Realtime updates
-Two users on the same turf and date: when one books a slot, it turns red for the other user immediately.
+### One schedule, two users
+The same turf and date as seen by two different players: slots that one player booked appear as "Your booking" for them and as "Booked" for everyone else. Changes are pushed to every open screen through WebSockets, so nobody needs to refresh.
 
-![Realtime booking demo](docs/realtime.gif)
+![Same date seen by two different users](docs/slots-two-users.png)
 
 ### My bookings
-![My bookings page](docs/my-bookings.png)
+![Upcoming bookings](docs/my-bookings.png)
+
+![Past and cancelled bookings](docs/my-bookings-past.png)
 
 ### Admin panel
 ![Admin page with add-turf form and bookings list](docs/admin.png)
